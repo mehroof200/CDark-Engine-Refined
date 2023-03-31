@@ -1,7 +1,9 @@
 # CDark-Engine-Refined
 A Game Engine That I Made (Still In development).
 
-The **Window** Functions (Expect CloseWindow() and TerminateApplication()) Were all Referenced from Programatic's video: https://www.youtube.com/watch?v=4R5vSIZxr0M&t=4s&ab_channel=Progrematic
+![CDarkLogo - Copy](https://user-images.githubusercontent.com/94703299/229128903-b025d71d-6ae6-4cad-b7ff-54228d36392a.png)
+
+The **Window** Functions (Expect CloseWindow() and TerminateApplication()) Were all Referenced from Progrematic's video: https://www.youtube.com/watch?v=4R5vSIZxr0M&t=4s&ab_channel=Progrematic
 
 So Please give credit to him, because without his videos this wouldn't be possible!
 
