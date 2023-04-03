@@ -21,12 +21,19 @@
     <ClCompile Include="CDark-Source\Window\Graphics\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CDark-Source\Par\shapes\par_shapes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="LICENSE.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CDark-Source\Window\Graphics\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDark-Source\Par\shapes\par_shapes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

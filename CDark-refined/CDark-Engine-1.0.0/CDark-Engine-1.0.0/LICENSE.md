@@ -1,9 +1,9 @@
-/* =======================================================================================
-*                               Created By Mehroof Abid
-* -----------------------------------------------------------------------------------------
-* 
-* 
-* Mozilla Public License Version 2.0
+# Created By Mehroof Abid (2023 - 2023).
+# Application Of Use: Microsoft Visual Studio 2022 Community.
+# Github: https://github.com/mehroof200/CDark-Engine-Refined
+
+********************************************************************************************
+Mozilla Public License Version 2.0
 ==================================
 
 1. Definitions
@@ -376,68 +376,4 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
-*/
-
-#ifndef CDARK_WINDOW
-#define CDARK_WINDOW
-
-#include "GL/glew.h"
-#include "GLFW/glfw3.h"
-
-#pragma comment(lib, "opengl32.lib")
-
-#include <iostream>
-
-
-using namespace std;
-
-/* 
-	* !@brief The Engine Class
-	* All Of the Window Code I Referenced From Progrematic's video: https://www.youtube.com/watch?time_continue=4&v=4R5vSIZxr0M&embeds_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_origin=https%3A%2F%2Fwww.bing.com&feature=emb_logo
-	* So please All the credit to him, because without his videos this wouldn't be possible!
-	* And also I'm using NuGet Package 'nupengl.core' And Since The Package is depracated it might not work :P.
-*/
-class Engine
-{
-public:
-	static int SCREEN_WIDTH;
-	static int SCREEN_HEIGHT;
-
-	Engine();
-	~Engine();
-
-	/*
-	* !@brief Intializes GLFW And GLEW (OpenGL Extension Wrangler Libary) And Also Creates The Window.
-	*/
-	bool Initialize(const char* windowTitle);
-
-
-	/*
-	* !@brief Updates The Window And Swap The Buffers.
-	* WARNING: Render Everything Before You Call the Update() Function.
-	*/
-	void Update();
-
-	/*
-* !@brief Colors The Window.
-* r is Red, g is Green and b is blue. But it uses 0 to 1 rgb color space.
-* It is also cleared with GL_COLOR_BUFFER_BIT and GL_DEPTH_BUFFER_BIT.
-*/
-	void Clear(float r, float g, float b);
-	/*
-	* !@brief Destroys The Window.
-	*/
-	int CloseWindow();
-	/*
-	* !@brief Ends runtime and Closes Everything.
-	*/
-	void TerminateApplication();
-
-private:
-
-	static GLFWwindow* window;
-
-};
-
-
-#endif
+********************************************************************************************
