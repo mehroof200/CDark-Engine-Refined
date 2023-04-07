@@ -19,26 +19,38 @@ Atlas::~Atlas()
 
 }
 
-void Atlas::SetTriDefaults(GLuint VertexArrayID, GLuint vertexbuffer)
+unsigned int Atlas::SetVAO()
 {
 	// VAO
-	glGenVertexArrays(1, &VertexArrayID);
-	glBindVertexArray(VertexArrayID);
+	glGenVertexArrays(1, &VAO);
+	glBindVertexArray(VAO);
 
-	//VBO
-// Generate 1 buffer, put the resulting identifier in vertexbuffer
-	glGenBuffers(1, &vertexbuffer);
-	// The following commands will talk about our 'vertexbuffer' buffer
-	glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
-	// Give our vertices to OpenGL.
-	glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW);
+	return VAO;
 }
 
-void Atlas::Draw(GLuint vertexbuffer)
+unsigned int Atlas::SetVBO()
+{
+	// Generate 1 buffer, put the resulting identifier in vertexbuffer
+	glGenBuffers(1, &VBO);
+	// The following commands will talk about our 'vertexbuffer' buffer
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	// Give our vertices to OpenGL.
+	glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW);
+
+	return VBO;
+}
+
+void Atlas::SetTriDefaults()
+{
+	SetVAO();
+	SetVBO();
+}
+
+void Atlas::Draw()
 {
 	// 1st attribute buffer : vertices
 	glEnableVertexAttribArray(0);
-	glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 	glVertexAttribPointer(
 		0,                  // attribute 0. No particular reason for 0, but must match the layout in the shader.
 		3,                  // size

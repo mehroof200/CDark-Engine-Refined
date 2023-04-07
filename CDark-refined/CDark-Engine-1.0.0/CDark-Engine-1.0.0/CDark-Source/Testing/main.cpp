@@ -15,14 +15,12 @@ int main() // The entry point of application (e.g Win32 uses int WINAPI WinMain(
 
 	engine.Initialize("My CDark Game!"); // Initializies GLEW and GLFW (Also Creates A Window).
 
-	GLuint VertexArrayID{}, vertexbuffer{};
-
-	atlas.SetTriDefaults(VertexArrayID, vertexbuffer);
+	atlas.SetTriDefaults();
 
 	while (!engine.CloseWindow()) // Run until the user closes the application entirely.
 	{
 		engine.Clear(0.0f, 0.0f, 1.0f); // Gives a nice blue color.
-		atlas.Draw(vertexbuffer);
+		atlas.Draw();
 		engine.Update(); // Checks for events and swaps front and back buffers (More Info On GLFW Documentation).
 	}
 

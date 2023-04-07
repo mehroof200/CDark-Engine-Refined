@@ -24,6 +24,9 @@
     <ClCompile Include="CDark-Source\Par\shapes\par_shapes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CDark-Source\Pad\shapes\pad_shapes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -34,6 +37,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CDark-Source\Par\shapes\par_shapes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDark-Source\Pad\shapes\pad_shapes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CDark-Source\Pad\shapes\pad_shapes.cpp" />
     <ClCompile Include="CDark-Source\Par\shapes\par_shapes.cpp" />
     <ClCompile Include="CDark-Source\Testing\main.cpp" />
     <ClCompile Include="CDark-Source\Window\Graphics\Window.cpp" />
@@ -136,6 +137,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CDark-Source\Pad\shapes\pad_shapes.h" />
     <ClInclude Include="CDark-Source\Par\shapes\par_shapes.h" />
     <ClInclude Include="CDark-Source\Window\Graphics\Window.h" />
   </ItemGroup>

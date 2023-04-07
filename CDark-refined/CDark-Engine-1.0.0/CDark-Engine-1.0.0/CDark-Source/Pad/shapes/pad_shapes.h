@@ -18,10 +18,16 @@ public:
 
 	static const GLfloat g_vertex_buffer_data[];
 
-	void SetTriDefaults(GLuint VAO, GLuint VBO);
-	void Draw(GLuint vertexbuffer);
-private:
+	void SetTriDefaults();
+	void Draw();
+	unsigned int SetVAO();
+	unsigned int SetVBO();
 
+	inline unsigned int GetVAO() { return VAO; }
+	inline unsigned int GetVBO() { return VBO; }
+private:
+	static unsigned int VAO;
+	static unsigned int VBO;
 };
 
 #endif
